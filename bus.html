@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/bus.css">
 <head>
 <title>Ticket Page</title>
 </head>
 <body>
 
+
+    
 <h1>Bus Tickets</h1>
 
-<p>Welcome to Tickets Fontys Bus Ticket Website</p>
+<p>Welcome to tickets Fontys bus ticket website</p>
+
+<img src="ebusco_30_rnet_front_01-scaled.jpg" alt="picture of bus">
+
+
+
+    <form style="float:right;">
+        <label for="CitiesDestination">Destination:</label><br>
+        <input list="CitiesDestination">
+    
+        <datalist id="CitiesDestination">
+          <option value="Amsterdam">
+          <option value="Berlin">
+          <option value="Breda">
+          <option value="Rotterdam">
+          <option value="Venlo">
+        </datalist> 
+        </form>
+
+        <form style="float:right;">
+            <label for="CitiesDeparture">Departure:</label><br>
+            <input list="CitiesDeparture">
+        
+            <datalist id="CitiesDeparture">
+              <option value="Amsterdam">
+              <option value="Berlin">
+              <option value="Breda">
+              <option value="Rotterdam">
+              <option value="Venlo">
+            </datalist> 
+            </form>
+
+<p>Cities we serve:</p>
+<ul>
+    <li>Amsterdam</li>
+    <li>Berlin</li>
+    <li>Breda</li>
+    <li>Rotterdam</li>
+    <li>Venlo</li>
+  </ul> 
 
 </body>
 </html>
