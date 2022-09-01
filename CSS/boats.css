@@ -7,7 +7,8 @@
     width: 100%;
     height: 80px;
     display: block;
-    background-color: black;
+    background-color: #0d3d56 ;
+   
 }
 
 .inner_header{
@@ -36,12 +37,16 @@
 .navigation{
     float: right;
     height: 100%;
+    
+
 }
 .navigation a{
         height: 100%;
         display: table;
         float: left;
         padding: 0px 20px;
+        padding-top: 30px;
+        
 
 }
 
@@ -56,4 +61,33 @@
     color: white;
     font-family: 'Montserrat';
     font-size: 16px;
+}
+
+.buttons :active, :visited, :link{
+    text-decoration: none;
+}
+
+.buttons :hover{
+    color: #cd594a;
+}
+
+.ticket_top{
+    width: 50%;
+    height: 80px;
+    margin: auto;
+    margin-top: 100px;
+    display: block; 
+    background: linear-gradient(#f8b195,#f67280);
+}
+
+.ticket_top li{
+    
+}
+
+.ticket_bottom{
+    width: 50%;
+    height: 350px;
+    margin: auto;
+    display: block; 
+    background: linear-gradient(#6c507b,#335c7d) ;
 }
