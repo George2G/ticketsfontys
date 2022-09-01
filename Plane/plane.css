@@ -15,14 +15,39 @@
 .header-link :active, :visited, :link{
     color: white;
     text-decoration: none;
-    /*padding-left: 30px;*/
+    padding-left: 55px;
 }
 .header-link :hover{
     color: rgb(153, 150, 150);
 }
 
 h1{
-    width: 100%;
-    text-align: center;
     display: inline-block;
+    font-family: 'Montserrat';
+    
+}
+
+.padding-left{
+    padding-left: 30%;
+}
+
+.blend{
+    background: linear-gradient(90deg, #428CD4, #FF9CDA);
+    width: 800px;
+    height: 70px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.under-blend{
+    width: 800px;
+    height: 250px;
+    background-color: rgb(208, 208, 208);
+    margin:auto;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.location-sign{
+    
 }
