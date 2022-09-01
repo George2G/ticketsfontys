@@ -31,7 +31,7 @@
     display: table-cell;
     vertical-align: middle;
     font-family: 'Montserrat';
-    font-size: 32px;
+    font-size: 60px;
 }
 
 .navigation{
@@ -73,24 +73,25 @@
 
 .ticket_top{
     width: 50%;
-    height: 80px;
+    height: 50px;
     display: block; 
     background: linear-gradient(#f8b195,#f67280);
     margin: auto;
     margin-top: 100px; 
 }
 
+.lists{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    padding-top: 15px;
+}
+
 .ticket_top li1{
     color: white;
     height: 100%;
     display: table-cell;
-    
-    padding-left: 10px;
-    font-family: 'Montserrat';
-    font-size: 25px;
+    padding-left: 20px;
 
-    
-   
 }
 
 .ticket_top li{
@@ -98,10 +99,6 @@
     height: 100%;
     display: table-cell;
     padding-left: 150px;
-    font-family: 'Montserrat';
-    font-size: 25px;
-    
-   
 }
 
 .ticket_bottom{
@@ -110,4 +107,34 @@
     margin: auto;
     display: block; 
     background: linear-gradient(#6c507b,#335c7d) ;
+}
+
+.about{
+    width: 50%;
+    height: 80px;
+    display: block;
+    background-color: #5ca8d0 ;
+    margin: auto;
+    margin-top: 50px;
+   
+}
+
+.about li{
+    color: white;
+    height: 100%;
+    display: table-cell;
+    padding-left: 20px;
+    padding-top: 25px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    
+}
+
+.credits{
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #1ade75 ;
+    margin: auto;
+    margin-top: 250px;
 }
