@@ -5,35 +5,33 @@
 <title>Ticket Page</title>
 </head>
 <body>
-
-
+    <div>
+        <nav class="nav">
+            <ul class="nav__items">
+                <li class="nav__item"><a href="default.asp">Home</a></li>
+                <li class="nav__item"><a href="news.asp">News</a></li>
+                <li class="nav__item"><a href="contact.asp">Contact</a></li>
+                <li class="nav__item"><a href="about.asp">About</a></li>
+              </ul> 
+        </nav>
+    </div>
     
-<h1>Bus Tickets</h1>
 
 <p>Welcome to tickets Fontys bus ticket website</p>
 
-<img src="ebusco_30_rnet_front_01-scaled.jpg" alt="picture of bus">
 
 
+<div class="drive">
 
-    <form style="float:right;">
-        <label for="CitiesDestination">Destination:</label><br>
-        <input list="CitiesDestination">
-    
-        <datalist id="CitiesDestination">
-          <option value="Amsterdam">
-          <option value="Berlin">
-          <option value="Breda">
-          <option value="Rotterdam">
-          <option value="Venlo">
-        </datalist> 
-        </form>
-
-        <form style="float:right;">
-            <label for="CitiesDeparture">Departure:</label><br>
-            <input list="CitiesDeparture">
+    <div class="gif">
+        <iframe src="https://giphy.com/embed/eBgE4z0u02raxuyUlc" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
+    <div class="book">
+        <form>
+            <label for="CitiesDestination">Destination:</label><br>
+            <input list="CitiesDestination">
         
-            <datalist id="CitiesDeparture">
+            <datalist id="CitiesDestination">
               <option value="Amsterdam">
               <option value="Berlin">
               <option value="Breda">
@@ -41,15 +39,36 @@
               <option value="Venlo">
             </datalist> 
             </form>
+    
+            <form>
+                <label for="CitiesDeparture">Departure:</label><br>
+                <input list="CitiesDeparture">
+            
+                <datalist id="CitiesDeparture">
+                  <option value="Amsterdam">
+                  <option value="Berlin">
+                  <option value="Breda">
+                  <option value="Rotterdam">
+                  <option value="Venlo">
+                </datalist> 
+                </form>
 
-<p>Cities we serve:</p>
-<ul>
-    <li>Amsterdam</li>
-    <li>Berlin</li>
-    <li>Breda</li>
-    <li>Rotterdam</li>
-    <li>Venlo</li>
-  </ul> 
+    </div>
+    
+</div>
+    
+<div class="cities">
+
+    <p>Cities we serve:</p>
+    <ul>
+        <li>Amsterdam</li>
+        <li>Berlin</li>
+        <li>Breda</li>
+        <li>Rotterdam</li>
+        <li>Venlo</li>
+      </ul> 
+</div>
+
 
 </body>
 </html>

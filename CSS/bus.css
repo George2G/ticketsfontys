@@ -1,6 +1,7 @@
 body {
     background-color: rgb(255, 255, 255);
-  }
+}
+
   h1 {
     color: rgb(255, 133, 133);
     font-family: verdana;
@@ -25,3 +26,52 @@ body {
     width: 50%;
     height: 25%;
   }
+
+  
+
+  .nav{
+    position: sticky;
+    top: 0;
+    background-color: #111;
+    height: 70px;
+    line-height: 70px;
+  }
+
+  .nav__items{
+
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .nav__item a{
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    cursor: not-allowed;
+  }
+
+.nav__item a:hover {
+  background-color: rgb(65, 64, 64);
+}
+
+.gif{
+  position: relative;
+}
+
+.drive{
+  position: relative;
+}
+
+.cities{
+
+  position: relative;
+
+}
+
+.book{
+
+  position: absolute;
+  bottom: 200px;
+  right: 500px;
+  display: inline-flex;
+}
