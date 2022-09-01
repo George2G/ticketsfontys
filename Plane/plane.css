@@ -8,12 +8,21 @@
     background-color: black;
     color: white;
     width: 100%;
-    text-align: left;
+    /*text-align: left;*/
     padding: 30px 15px 30px 15px;
 }
 
-h1 :hover, :active, :visited, :link{
+.header-link :active, :visited, :link{
     color: white;
     text-decoration: none;
+    /*padding-left: 30px;*/
+}
+.header-link :hover{
+    color: rgb(153, 150, 150);
+}
 
+h1{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
 }
