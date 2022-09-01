@@ -74,14 +74,34 @@
 .ticket_top{
     width: 50%;
     height: 80px;
-    margin: auto;
-    margin-top: 100px;
     display: block; 
     background: linear-gradient(#f8b195,#f67280);
+    margin: auto;
+    margin-top: 100px; 
+}
+
+.ticket_top li1{
+    color: white;
+    height: 100%;
+    display: table-cell;
+    
+    padding-left: 10px;
+    font-family: 'Montserrat';
+    font-size: 25px;
+
+    
+   
 }
 
 .ticket_top li{
+    color: white;
+    height: 100%;
+    display: table-cell;
+    padding-left: 150px;
+    font-family: 'Montserrat';
+    font-size: 25px;
     
+   
 }
 
 .ticket_bottom{
