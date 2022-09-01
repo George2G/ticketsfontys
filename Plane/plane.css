@@ -9,13 +9,13 @@
     color: white;
     width: 100%;
     /*text-align: left;*/
-    padding: 30px 15px 30px 15px;
+    padding: 30px 0px 30px 0px;
 }
 
 .header-link :active, :visited, :link{
     color: white;
     text-decoration: none;
-    padding-left: 55px;
+    padding-left: 70px;
 }
 .header-link :hover{
     color: rgb(153, 150, 150);
@@ -32,12 +32,14 @@ h1{
 }
 
 .blend{
+    position: relative;
     background: linear-gradient(90deg, #428CD4, #FF9CDA);
     width: 800px;
     height: 70px;
     margin: auto;
     margin-top: 100px;
     border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 0px 5px 5px grey;
 }
 
 .under-blend{
@@ -46,8 +48,29 @@ h1{
     background-color: rgb(208, 208, 208);
     margin:auto;
     border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 0px 5px 5px grey;
 }
 
+
+
+
+
+/*.blend, .under-blend{
+    border: rgb(151, 151, 151);
+    border-width: 3px;
+    border-style: solid;
+}
+*/
 .location-sign{
-    
+    position:absolute;
+    top: 12px;
+    left: 10px;
+    width: 45px;
+}
+
+h2{
+    position: absolute;
+    padding: 20px;
+    padding-left: 50px;
+    font-size: 30px;
 }
