@@ -1,0 +1,160 @@
+@import './colors';
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #fffafa;
+	color: $white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.6rem;
+}
+
+// <---------------------------- general classes ---------------------------->
+.wrapper {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.underline {
+	width: 60px;
+	height: 4px;
+	margin: 5px auto 0 auto;
+	background-color: $primary;
+}
+
+.section-titile {
+	text-align: center;
+    font-weight: normal;
+	text-transform: uppercase;
+    color: #212529;
+}
+
+.hero-shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+// <---------------------------- navigation ---------------------------->
+.nav {
+	position: sticky;
+	top: 0;
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+	background-color: rgba(17, 17, 17, 0.95);
+	z-index: 10;
+
+	// DRY - Don't repeat yourself
+	&__logo,
+	&__item {
+		color: $white;
+		text-decoration: none;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	&__logo {
+		padding: 0 1em;
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	&__logo i {
+		margin-right: 0.5em;
+	}
+
+	&__items {
+		display: none;
+	}
+
+	&__item {
+		padding: 1em;
+		margin: 0 0.6em;
+		font-size: 1.6rem;
+		transition: color 0.3s;
+
+		&:hover {
+			color: $primary;
+		}
+	}
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		// border: 2px solid green;
+	}
+}
+
+// <---------------------------- header ---------------------------->
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 80vh;
+	padding: 0 2em;
+	background-image: url('../img/header-small-size.jpg');
+	background-size: cover;
+	// background-attachment: fixed;
+	text-align: center;
+
+	&__text {
+		z-index: 5;
+	}
+
+	&__title {
+		font-size: 3.6rem;
+		margin-bottom: 10px;
+	}
+
+	&__subtitle {
+		font-size: 2rem;
+		margin-bottom: 1.5em;
+	}
+
+	&__span {
+		color: $primary;
+		text-shadow: 1px 1px 300px;
+	}
+
+	&__btn {
+		padding: 0.6em 1.2em;
+		color: $white;
+		background-color: transparent;
+		border: 2px solid $white;
+		border-radius: 8px;
+		text-decoration: none;
+		text-transform: uppercase;
+		cursor: pointer;
+		transition: color 0.3s, background-color 0.3s;
+
+		&:hover {
+			color: $dark;
+			background-color: $white;
+		}
+	}
+}
+
+// <---------------------------- section: contact  ---------------------------->
+.contact{
+    padding: 4em 2em;
+    background-color: #eee;
+}
+
+@import './small';
+@import './medium';
+@import './large';

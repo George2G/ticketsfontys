@@ -1,0 +1,24 @@
+
+@media (min-width: 992px) {
+	.nav {
+		&__items {
+			display: block;
+		}
+	}
+}
+
+// <---------------------------- desktop devices ---------------------------->
+@media (min-width: 1200px) {
+	.section-titile {
+		font-size: 4rem;
+	
+    }
+	.header {
+		background-image: url('../img/header-big-size.jpg');
+		background-size: cover;
+
+		&__title {
+			font-size: 5.2rem;
+		}
+	}
+}
