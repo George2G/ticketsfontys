@@ -1,9 +1,77 @@
 body {
-    background-color: rgb(26, 138, 3);
-  }
+    background-color: rgb(255, 255, 255);
+}
+
   h1 {
-    color: rgb(255, 0, 0);
+    color: rgb(255, 133, 133);
+    font-family: verdana;
+    font-size: 200%;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
   }
+
   p {
     color: rgb(0, 0, 0);
+    font-family: verdana;
+    font-size: 150%;
   }
+
+  img {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    width: 50%;
+    height: 25%;
+  }
+
+  
+
+  .nav{
+    position: sticky;
+    top: 0;
+    background-color: #111;
+    height: 70px;
+    line-height: 70px;
+  }
+
+  .nav__items{
+
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .nav__item a{
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    cursor: not-allowed;
+  }
+
+.nav__item a:hover {
+  background-color: rgb(65, 64, 64);
+}
+
+.gif{
+  position: relative;
+}
+
+.drive{
+  position: relative;
+}
+
+.cities{
+
+  position: relative;
+
+}
+
+.book{
+
+  position: absolute;
+  bottom: 200px;
+  right: 500px;
+  display: inline-flex;
+}
