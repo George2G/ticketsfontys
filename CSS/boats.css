@@ -82,23 +82,16 @@
 
 .lists{
     font-family: 'ABeeZee';
-    font-size: 20px;
-    padding-top: 15px;
-}
-
-.ticket_top li1{
-    color: white;
-    height: 100%;
-    display: table-cell;
-    padding-left: 20px;
-
+    font-size: 40px;
+    padding-left: 200px;
+    
 }
 
 .ticket_top li{
     color: white;
     height: 100%;
     display: table-cell;
-    padding-left: 150px;
+   
 }
 
 .ticket_bottom{
@@ -109,6 +102,24 @@
     background: linear-gradient(#6c507b,#335c7d) ;
 }
 
+.buy{
+    width: 150px; 
+    height: 45px;
+    margin-top: 250px;
+    margin-left: 550px;
+    border-radius: 25px 25px 25px 25px; 
+    background-size: 400% 400%;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+   
+}
+
+@keyframes example {
+    from {background-color: rgb(0, 255, 17);}
+    to {background-color: rgb(0, 217, 255);}
+   
+  }
 .about{
     text-align: center;
     width: 50%;
