@@ -1,23 +1,13 @@
 body {
-    background-color: rgb(255, 255, 255);
-}
-
-  h1 {
-    color: rgb(255, 133, 133);
-    font-family: verdana;
-    font-size: 200%;
-    margin: auto;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-  }
-
-  p {
-    color: rgb(0, 0, 0);
-    font-family: verdana;
-    font-size: 150%;
-  }
+    list-style: none;
+}
 
   img {
     display: block;
@@ -27,51 +17,69 @@ body {
     height: 25%;
   }
 
-  
-
   .nav{
     position: sticky;
     top: 0;
     background-color: #111;
     height: 70px;
-    line-height: 70px;
+    line-height: 35px;
+    z-index: 100;
+    overflow: hidden;
   }
 
   .nav__items{
-
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
   }
 
   .nav__item a{
-    padding: 15px;
     text-decoration: none;
     color: white;
-    cursor: not-allowed;
+    padding: 100%;
   }
 
 .nav__item a:hover {
   background-color: rgb(65, 64, 64);
 }
 
-.gif{
-  position: relative;
-}
+.book{
 
-.drive{
-  position: relative;
+  display: inline-flex;
 }
 
 .cities{
-
-  position: relative;
-
+  background-color: #00ffff;
 }
 
-.book{
 
-  position: absolute;
-  bottom: 200px;
-  right: 500px;
-  display: inline-flex;
+.header{
+  background-color: blueviolet;
+}
+
+.drive{
+  background-color: #ffebcd;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+  padding-top: 50px;
+}
+
+.spacer {
+  aspect-ratio: 960/140;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.button{
+  position: relative;
+  top:50%;
 }
