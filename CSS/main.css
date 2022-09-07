@@ -28,12 +28,13 @@ body {
 .underline {
   width: 60px;
   height: 4px;
-  margin: 5px auto 0 auto;
+  margin: 5px auto 50px auto;
   background-color: #039dff;
 }
 
 .section-titile {
   text-align: center;
+  font-size: 3rem;
   font-weight: normal;
   text-transform: uppercase;
   color: #212529;
@@ -150,13 +151,58 @@ body {
 }
 
 .header__btn:hover {
-  color: #111111;
+  color: #000000;
   background-color: #fff;
 }
 
 .contact {
   padding: 4em 2em;
   background-color: #eee;
+}
+
+.contact__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+.contact__form-item:nth-child(1), .contact__form-item:nth-child(2), .contact__form-item:nth-child(3) {
+  grid-column: 1/-1;
+  margin-bottom: 1em;
+}
+
+.contact__label {
+  display: block;
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+
+.contact__input, .contact__textarea {
+  border: none;
+  border-radius: 8px;
+}
+
+.contact__input {
+  width: 100%;
+  padding: 1em;
+}
+
+.contact__textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.contact__btn {
+  grid-column: 1/-1;
+  padding: 1em;
+  background-color: #039dff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -169,11 +215,43 @@ body {
   .header__subtitle {
     font-size: 2.2rem;
   }
+  .contact__btn {
+    max-width: 300px;
+  }
 }
 
 @media (min-width: 992px) {
   .nav__items {
     display: block;
+  }
+  .contact__form {
+    gap: 2em;
+  }
+  .contact__form-item:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .contact__form-item:nth-child(2) {
+    grid-column: 4/-1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .contact__form-item:nth-child(3) {
+    grid-column: 1/-1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .contact__form-item:nth-child(1), .contact__form-item:nth-child(2), .contact__form-item:nth-child(3) {
+    margin-bottom: 0;
+  }
+  .contact__btn {
+    max-width: 300px;
   }
 }
 

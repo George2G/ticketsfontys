@@ -30,12 +30,13 @@ body {
 .underline {
 	width: 60px;
 	height: 4px;
-	margin: 5px auto 0 auto;
+	margin: 5px auto 50px auto;
 	background-color: $primary;
 }
 
 .section-titile {
 	text-align: center;
+	font-size: 3rem;
     font-weight: normal;
 	text-transform: uppercase;
     color: #212529;
@@ -153,6 +154,56 @@ body {
 .contact{
     padding: 4em 2em;
     background-color: #eee;
+
+	&__form{
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	&__form-item{
+
+		&:nth-child(1),&:nth-child(2),&:nth-child(3){
+			grid-column: 1/-1;
+			margin-bottom: 1em;
+		}
+	}
+
+	&__label{
+		display: block;
+		color: $dark;
+		font-size: 2rem;
+		margin-bottom: .5em;
+	}
+
+	&__input, &__textarea{
+		border: none;
+		border-radius: 8px;
+	}
+
+	&__input{
+		width: 100%;
+		padding: 1em;
+	}
+
+	&__textarea{
+		width: 100%;
+		max-width: 100%;
+		min-width: 100%;
+	}
+
+	&__btn{
+		grid-column: 1/-1;
+		// max-width: 300px;
+		padding: 1em;
+		background-color: $primary;
+		border: none;
+		border-radius: 8px;
+		color: $white;
+		cursor: pointer;
+
+	}
+
+
 }
 
 @import './small';
