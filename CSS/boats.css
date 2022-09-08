@@ -3,6 +3,10 @@
     padding: 0;
     
 }
+
+.body{
+   
+}
 .header{
     width: 100%;
     height: 80px;
@@ -72,61 +76,112 @@
 }
 
 .ticket_top{
-    width: 50%;
+    width: 40%;
     height: 50px;
     display: block; 
-    background: linear-gradient(#f8b195,#f67280);
+    background-color: #0d3d56;
+    border-radius: 25px 25px 0 0;
     margin: auto;
     margin-top: 100px; 
-}
-
-.lists{
-    font-family: 'ABeeZee';
-    font-size: 20px;
-    padding-top: 15px;
-}
-
-.ticket_top li1{
-    color: white;
-    height: 100%;
-    display: table-cell;
-    padding-left: 20px;
-
+    
+    
 }
 
 .ticket_top li{
+    font-family: 'Montserrat';
+    font-size: 30px;
     color: white;
-    height: 100%;
+    margin: auto;
+    width: 350px;
+    padding-left: 80px;
+    padding-top: 5px;
     display: table-cell;
-    padding-left: 150px;
 }
+
+.ticket_top{
+    box-shadow: none;
+}
+
+.ticket_top :hover, .alignn:active {
+    box-shadow: inset 0 0 10px orangered;
+    border-radius: 25px;
+    
+}
+
 
 .ticket_bottom{
-    width: 50%;
-    height: 350px;
+    width: 40%;
+    height: 650px;
     margin: auto;
     display: block; 
-    background: linear-gradient(#6c507b,#335c7d) ;
+    background-color: #0d3d56;
+    border-radius: 0 0 25px 25px; 
 }
 
-.about{
-    text-align: center;
-    width: 50%;
-    height: 300px;
-    display: block;
-    background-color: #5ca8d0 ;
-    margin: auto;
-    margin-top: 50px;
-   
+
+.ticket_bottom input{
+    height: 35px;
+    width: 450px;
+    margin-top: 25px;
+    margin-left: 80px;
+    border-radius: 8px 8px 8px 8px;
+    font-size: 20px;
 }
 
-.about p{
+.button{
+    height: 40px;
+    width: 450px;
+    margin-top: 25px;
+    margin-left: 80px;
+    border-radius: 8px 8px 8px 8px;
+    display: table;
+    background-color:   orangered;
     color: white;
-    height: 100%;
+    font-family: 'Permanent Marker';
+    font-size: 25px;
+}
+
+.ticket_bottom p{
+    margin-top: 100px;
+    margin-left: 50px;
+    color: white;  
+    font-family: 'Ubuntu';
+    
+    
+}
+
+
+.alignn :hover {
+    box-shadow: inset 0 0 10px red;
+
+}
+
+.referrence{
+    width: 80%;
+    height: 60px;
+    display: block;
     margin: auto;
-    padding-top: 125px;
+    margin-top: 25px;
+    border-radius: 8px 8px 8px 8px;
+    background-color: white;
+    background-image: url("../ImagesPLane/istockphoto-1222059389-1024x1024\ \(1\).png");
+    background-size: cover;
+    box-shadow: none;
+    
+}
+
+
+
+.referrence li{
+    
+    display: table-cell;
+    color: #0d3d56;
+    padding-left: 60px;
+    padding-top: 10px;
+    width: 450px;
     font-family: 'Montserrat';
-    font-size: 60px;
+    font-size: 25px;
+    box-shadow: none;
     
 }
 
@@ -134,7 +189,14 @@
     width: 100%;
     height: 80px;
     display: block;
-    background-color: #1ade75 ;
+    background-color: white;
     margin: auto;
     margin-top: 250px;
+   
+}
+
+.credits h1{
+    font-family: 'Permanent Marker';
+    font-size: 55px;
+    text-align: center;
 }
