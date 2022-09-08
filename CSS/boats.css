@@ -134,6 +134,7 @@
     color: white;  
     font-family: 'Ubuntu';
     
+    
 }
 
 .referrence{
@@ -145,10 +146,11 @@
     margin-top: 25px;
     border-radius: 8px 8px 8px 8px;
     background-color: white;
+    background-image: url("../ImagesPLane/istockphoto-1222059389-1024x1024\ \(1\).png");
+    background-size: cover;
     
-   
     
-    
+
     
 }
 
@@ -156,11 +158,12 @@
     
     display: table-cell;
     color: #0d3d56;
-    padding-left: 90px;
-    padding-top: 20px;
+    padding-left: 60px;
+    padding-top: 10px;
     width: 450px;
     font-family: 'Montserrat';
-    font-size: 15px;
+    font-size: 25px;
+    
     
 }
 
