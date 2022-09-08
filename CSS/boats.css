@@ -72,34 +72,96 @@
 }
 
 .ticket_top{
-    width: 50%;
+    width: 40%;
     height: 50px;
     display: block; 
     background: linear-gradient(#f8b195,#f67280);
     margin: auto;
     margin-top: 100px; 
-}
-
-.lists{
-    font-family: 'ABeeZee';
-    font-size: 40px;
-    padding-left: 200px;
     
 }
 
 .ticket_top li{
+    font-family: 'Montserrat';
+    font-size: 30px;
     color: white;
-    height: 100%;
+    margin: auto;
+    width: 350px;
+   
+    
+    padding-left: 80px;
+    padding-top: 5px;
     display: table-cell;
    
 }
 
+
 .ticket_bottom{
-    width: 50%;
-    height: 350px;
+    width: 40%;
+    height: 550px;
     margin: auto;
     display: block; 
-    background: linear-gradient(#6c507b,#335c7d) ;
+    background-color: #0d3d56;
+    
+
+    
+}
+
+.ticket_bottom input{
+    height: 35px;
+    width: 450px;
+    margin-top: 25px;
+    margin-left: 80px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.button{
+    height: 40px;
+    width: 450px;
+    margin-top: 25px;
+    margin-left: 80px;
+    border-radius: 8px 8px 8px 8px;
+    display: table;
+    background-color:   orangered;
+    color: white;
+    font-family: 'Permanent Marker';
+    font-size: 25px;
+}
+
+.ticket_bottom p{
+    margin-top: 25px;
+    margin-left: 50px;
+    color: white;  
+    font-family: 'Ubuntu';
+    
+}
+
+.referrence{
+    
+    width: 80%;
+    height: 60px;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 8px 8px 8px 8px;
+    background-color: white;
+    
+   
+    
+    
+    
+}
+
+.referrence li{
+    
+    display: table-cell;
+    color: #0d3d56;
+    padding-left: 90px;
+    padding-top: 20px;
+    width: 450px;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    
 }
 
 .buy{
