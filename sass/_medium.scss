@@ -12,4 +12,25 @@
 			font-size: 2.2rem;
 		}
 	}
+
+	.offers {
+		&__card-box {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	
+		&__card {
+			width: 45%;
+			margin: 1em;
+		}
+	}
+	
+
+	.contact{
+
+		&__btn{
+			max-width: 300px;
+		}
+	}
 }
