@@ -157,6 +157,139 @@ body {
 
 .offers {
   padding: 4em 2em;
+  color: #fff;
+}
+
+.offers__card {
+  position: relative;
+  height: 450px;
+  margin-bottom: 2em;
+  border-radius: 8px;
+  text-align: center;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.offers__card:hover .offers__card-img {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  opacity: 0;
+}
+
+.offers__card:hover .offers__card-info {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+  opacity: 1;
+}
+
+.offers__card-img {
+  height: 100%;
+  border-radius: 8px;
+  padding: 2.2em;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+}
+
+.offers__card-img--first {
+  background-image: linear-gradient(45deg, rgba(176, 108, 185, 0.75), rgba(31, 93, 131, 0.75)), url("../img/offers-plane.jpeg");
+}
+
+.offers__card-img--second {
+  background-image: linear-gradient(45deg, rgba(176, 108, 185, 0.75), rgba(31, 93, 131, 0.75)), url("../img/offers-boat.jpeg");
+}
+
+.offers__card-img--third {
+  background-image: linear-gradient(45deg, rgba(176, 108, 185, 0.75), rgba(31, 93, 131, 0.75)), url("../img/offers-train.jpeg");
+}
+
+.offers__card-img--fourth {
+  background-image: linear-gradient(45deg, rgba(176, 108, 185, 0.75), rgba(31, 93, 131, 0.75)), url("../img/offers-car.jpeg");
+}
+
+.offers__card-img-title {
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.offers__card-img-text {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.8rem;
+}
+
+.offers__card-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-image: radial-gradient(circle at top right, #004eff 0%, #00d4ff 100%);
+  border-radius: 8px;
+  opacity: 0;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+}
+
+.offers__card-info-title {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 1.2em;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+}
+
+.offers__card-info-list {
+  width: 70%;
+  list-style: none;
+}
+
+.offers__card-info-list-item {
+  padding: 1em;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+
+.offers__card-info-list-item:not(:last-child) {
+  border-bottom: 1px solid #fff;
+}
+
+.offers__card-info-btn {
+  position: absolute !important;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 1em;
+  width: 80%;
+  background-color: #00ffaa;
+  border: none;
+  border-radius: 8px;
+  padding: 1em;
+  cursor: pointer;
 }
 
 .contact {
@@ -180,7 +313,7 @@ body {
   display: block;
   color: #000000;
   font-size: 2rem;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .contact__input, .contact__textarea {
@@ -218,6 +351,20 @@ body {
   }
   .header__subtitle {
     font-size: 2.2rem;
+  }
+  .offers__card-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .offers__card {
+    width: 45%;
+    margin: 1em;
   }
   .contact__btn {
     max-width: 300px;
@@ -269,6 +416,13 @@ body {
   }
   .header__title {
     font-size: 5.2rem;
+  }
+  .offers .wrapper {
+    max-width: 1400px;
+  }
+  .offers__card {
+    width: 22%;
+    margin: 0 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */

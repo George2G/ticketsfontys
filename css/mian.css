@@ -485,10 +485,6 @@ body {
   cursor: pointer;
 }
 
-.islands__card-info-btn::before {
-  background-color: #0fe29c;
-}
-
 /* --------------------- offers section ---------------------  */
 .offers {
   position: relative;

@@ -53,4 +53,16 @@
 			font-size: 5.2rem;
 		}
 	}
+
+	.offers{
+
+		.wrapper {
+			max-width: 1400px;
+		}
+
+		&__card{
+			width: 22%;
+			margin: 0 1em;
+		}
+	}
 }

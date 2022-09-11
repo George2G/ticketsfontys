@@ -13,6 +13,20 @@
 		}
 	}
 
+	.offers {
+		&__card-box {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	
+		&__card {
+			width: 45%;
+			margin: 1em;
+		}
+	}
+	
+
 	.contact{
 
 		&__btn{
